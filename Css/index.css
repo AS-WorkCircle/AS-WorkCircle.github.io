@@ -1,6 +1,17 @@
 
 #loginButton {
     text-decoration: none;
+    width: 330px; 
+    height: 55px; 
+    left: 50px; 
+    top: 757px; 
+    position: absolute; 
+    text-align: center; 
+    color: white; 
+    font-size: 17px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-weight: 400; 
+    word-wrap: break-word
 }
 
 #loginButton:hover {
