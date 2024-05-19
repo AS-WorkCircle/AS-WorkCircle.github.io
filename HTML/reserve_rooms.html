@@ -6,7 +6,6 @@
     <title>WorkCircle</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../Css/rooms.css'>
-    <script src='main.js'></script>
 </head>
 <body>
   <div style="width: 430px; height: 930px; position: relative; background: #FFF7DF">
@@ -22,50 +21,47 @@
     </a>
     <div style="left: 170px; top: 58px; position: absolute; color: black; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word">Reservar</div>
     
-    <a href="reserve_room.html">
       <div style="position: relative;">
-        <div style="left: 58px; top: 215px; position: absolute; color: black; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word">Sala 120</div>
-        <div style="width: 20px; height: 20px; left: 345px; top: 215px; position: absolute; background: #33FF00; border-radius: 9999px"></div>
+        <div style="left: 58px; top: 215px; position: absolute; color: black; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word" onclick="reserve(120)">Sala 120</div>
+        <div id='120' style="width: 20px; height: 20px; left: 345px; top: 215px; position: absolute; background: #33FF00; border-radius: 9999px"></div>
         <div style="width: 150px; height: 0px; left: 58px; top: 253.50px; position: absolute; border: 1px black solid"></div>
       </div>
-    </a>
 
 
     <div>
-      <div style="left: 58px; top: 299px; position: absolute; color: black; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word">Sala 130</div>
-      <div style="width: 20px; height: 20px; left: 345px; top: 299px; position: absolute; background: #33FF00; border-radius: 9999px"></div>
+      <div style="left: 58px; top: 299px; position: absolute; color: black; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word" onclick="reserve(130)">Sala 130</div>
+      <div id='130' style="width: 20px; height: 20px; left: 345px; top: 299px; position: absolute; background: #33FF00; border-radius: 9999px"></div>
       <div style="width: 150px; height: 0px; left: 58px; top: 338px; position: absolute; border: 1px black solid"></div>
     </div>
 
 
     <div>
-      <div style="left: 58px; top: 386px; position: absolute; color: black; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word">Sala 140</div>
-      <div style="width: 20px; height: 20px; left: 345px; top: 386px; position: absolute; background: #33FF00; border-radius: 9999px"></div>
+      <div style="left: 58px; top: 386px; position: absolute; color: black; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word" onclick="reserve(140)">Sala 140</div>
+      <div id='140' style="width: 20px; height: 20px; left: 345px; top: 386px; position: absolute; background: #33FF00; border-radius: 9999px"></div>
       <div style="width: 150px; height: 0px; left: 58px; top: 428px; position: absolute; border: 1px black solid"></div>
     </div>
     
 
     <div>
-      <div style="left: 58px; top: 473px; position: absolute; color: black; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word">Sala 150</div>
-      <div style="width: 20px; height: 20px; left: 345px; top: 473px; position: absolute; background: #FF0000; border-radius: 9999px"></div>
+      <div style="left: 58px; top: 473px; position: absolute; color: black; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word" onclick="reserve(150)">Sala 150</div>
+      <div id='150' style="width: 20px; height: 20px; left: 345px; top: 473px; position: absolute; background: #FF0000; border-radius: 9999px"></div>
       <div style="width: 150px; height: 0px; left: 58px; top: 520px; position: absolute; border: 1px black solid"></div>
     </div>
 
 
     <div>
-      <div style="left: 58px; top: 611px; position: absolute; color: black; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word">Impressora #1</div>
-      <div style="width: 20px; height: 20px; left: 345px; top: 611px; position: absolute; background: #FF0000; border-radius: 9999px"></div>
+      <div style="left: 58px; top: 611px; position: absolute; color: black; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word" onclick="reserve(1)">Impressora #1</div>
+      <div id='1' style="width: 20px; height: 20px; left: 345px; top: 611px; position: absolute; background: #FF0000; border-radius: 9999px"></div>
       <div style="width: 150px; height: 0px; left: 58px; top: 658px; position: absolute; border: 1px black solid"></div>
     </div>
 
-
-    <a href="reserve_printer.html">
       <div>
-        <div style="left: 58px; top: 686px; position: absolute; color: black; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word">Impressora #2</div>
-        <div style="width: 20px; height: 20px; left: 345px; top: 686px; position: absolute; background: #33FF00; border-radius: 9999px"></div>
+        <div style="left: 58px; top: 686px; position: absolute; color: black; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word" onclick="reserve(2)">Impressora #2</div>
+        <div id='2' style="width: 20px; height: 20px; left: 345px; top: 686px; position: absolute; background: #33FF00; border-radius: 9999px"></div>
         <div style="width: 150px; height: 0px; left: 58px; top: 733px; position: absolute; border: 1px black solid"></div>
       </div>
-    </a>
         
   </div>
+  <script src="../JS/resources.js"></script>
+  <script src="../JS/reservation.js"></script>
 </body>
