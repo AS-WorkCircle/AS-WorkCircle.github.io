@@ -5,7 +5,7 @@ function reserve(id) {
         alert('Recurso indisponível!')
     }
     else {
-        localStorage.setItem('toReserve', id);
+        localStorage.setItem('toReserve', JSON.stringify(id));
         if (id > 100) 
             window.location.href = '../HTML/reserve_room.html';
         else 
@@ -25,8 +25,8 @@ function makeReservation() {
 
     if (email && email.value) {
         if (validateEmail(email.value)) {
-            window.localStorage.setItem(resource, JSON.stringify({'user' : email, 'available' : 0}))
-            console.log(localStorage.getItem(resource));
+            window.localStorage.setItem(resource, JSON.stringify({'user' : email.value, 'available' : 0}));
+            window.location.href = '../HTML/temperature.html';
         }
         else 
             alert('Email inválido!');
