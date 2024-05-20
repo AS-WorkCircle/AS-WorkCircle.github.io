@@ -35,7 +35,9 @@ if (printer2.available == 1)
 else
     document.getElementById('2').style.background = 'red';
 
-console.log(room120.available);
+
+
+
 
 
 
