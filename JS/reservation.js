@@ -23,8 +23,23 @@ function makeReservation() {
     var email = document.getElementById('email');
     var resource = JSON.parse(window.localStorage.getItem('toReserve'));
 
+    // Check if email is valid
     if (email && email.value) {
         if (validateEmail(email.value)) {
+            // Get user's resources and append new resource
+            var existingEntries = JSON.parse(localStorage.getItem(localStorage.getItem('loggedUser')));
+
+            // If user doesn't have resources yet, create new array
+            if(existingEntries == null) existingEntries = [];
+            
+            var entry = resource;
+            localStorage.setItem("entry", JSON.stringify(entry));
+
+            // Save all resources back to local storage
+            existingEntries.push(entry);
+            localStorage.setItem(localStorage.getItem('loggedUser'), JSON.stringify(existingEntries));
+
+            // add user to the resource
             window.localStorage.setItem(resource, JSON.stringify({'user' : email.value, 'available' : 0}));
             window.location.href = '../HTML/temperature.html';
         }
