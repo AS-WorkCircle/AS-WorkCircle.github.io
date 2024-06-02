@@ -21,7 +21,7 @@
             <input id='email' style="left: 75px; top: 267px; position: absolute; color: rgba(0, 0, 0, 0.50); font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word; border: none; background-color: transparent;" placeholder="E-mail">
         </div>
         
-        <div>
+        <div id="reserveButton">
             <div style="width: 216px; height: 99px; left: 107px; top: 398px; position: absolute; background: #D12525; border-radius: 34px"></div>
             <div style="left: 167px; top: 437px; position: absolute; color: black; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word" onclick="makeReservation()">Reservar</div>
         </div>
@@ -36,5 +36,6 @@
     <script src="../JS/reservation.js"></script>
     <script>
         document.getElementById('roomID').innerHTML = 'Sala ' + JSON.parse(localStorage.getItem('toReserve'));
+        document.getElementById('email').value= JSON.parse(localStorage.getItem('loggedUser')).slice(0,-9);
     </script>
 </body>

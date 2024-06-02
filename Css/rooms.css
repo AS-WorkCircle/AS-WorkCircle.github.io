@@ -26,3 +26,7 @@ body{
     background: #33FF00; 
     border-radius: 9999px;
 }
+
+.resource {
+    cursor: pointer;
+}

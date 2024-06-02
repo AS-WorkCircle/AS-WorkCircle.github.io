@@ -5,4 +5,8 @@ body{
     height: 100vh;
     margin: 0;
 }
+
+.resource:hover {
+    cursor: pointer;
+}
     

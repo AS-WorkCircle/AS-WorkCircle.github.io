@@ -5,3 +5,11 @@ body{
     height: 100vh;
     margin: 0;
 }
+
+#reserveButton:hover {
+    cursor: pointer;
+}
+
+#endReservation:hover {
+    cursor: pointer;
+}

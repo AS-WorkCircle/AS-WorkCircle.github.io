@@ -5,3 +5,15 @@ body{
     height: 100vh;
     margin: 0;
 }
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+#endReservation:hover {
+    cursor: pointer;
+}
+
+#makePayment:hover {
+    cursor: pointer;
+}
