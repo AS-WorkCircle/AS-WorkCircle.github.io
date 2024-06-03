@@ -28,7 +28,7 @@ function register() {
         if (password) { // See if password is provided
           // Store user info (In a real application, never store passwords in plain text)
           localStorage.setItem(email, password.value);
-          localStorage.setItem('loggedUser', email);
+          localStorage.setItem('loggedUser', JSON.stringify(email));
           window.location.href = "menu.html";
         } else { alert('Password inválida!'); }
       } else { alert('Usuário já existe!'); }
