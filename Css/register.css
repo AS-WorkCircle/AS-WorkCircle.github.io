@@ -24,3 +24,11 @@ body{
     height: 100vh;
     margin: 0;
 }
+
+img{
+    transform: scale(0.2);
+    position: absolute;
+    top:0%;
+    z-index: 1;
+    left: 7%;
+}
