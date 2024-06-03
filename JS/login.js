@@ -28,7 +28,7 @@ function login() {
             if (localStorage.getItem(email) != null) { // See if user exists
                 if (JSON.parse(localStorage.getItem(email) == password.value)) { // See if password matches
                     localStorage.setItem('loggedUser', JSON.stringify(email));
-                    window.location.href = "menu.html";
+                    window.location.href = "HTML/menu.html";
                 } else { alert('Password errada!'); }
             } else { alert('Usuário não existe!'); }
         } else { alert('E-mail inválido!') }
