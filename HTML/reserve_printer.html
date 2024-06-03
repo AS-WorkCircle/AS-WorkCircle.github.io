@@ -35,7 +35,7 @@
   <script src="../JS/reservation.js"></script>
   <script>
     document.getElementById('printerID').innerHTML = "Impressora - " + JSON.parse(localStorage.getItem('toReserve')); 
-    document.getElementById('email').value= JSON.parse(localStorage.getItem('loggedUser')).slice(0,-9);
+    document.getElementById('email').value= JSON.parse(localStorage.getItem('loggedUser').slice(0,-9);
   </script>
   
 </body>
