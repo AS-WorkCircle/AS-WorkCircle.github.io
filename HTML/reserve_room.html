@@ -36,6 +36,6 @@
     <script src="../JS/reservation.js"></script>
     <script>
         document.getElementById('roomID').innerHTML = 'Sala ' + JSON.parse(localStorage.getItem('toReserve'));
-        document.getElementById('email').value= JSON.parse(localStorage.getItem('loggedUser'));
+        document.getElementById('email').value= localStorage.getItem('loggedUser');
     </script>
 </body>
