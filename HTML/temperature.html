@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>WorkCircle</title>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel='stylesheet' type='text/css' media='screen' href='../Css/temperature.css'>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>WorkCircle</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../Css/temperature.css'>
 </head>
 <body style="background-color: black;" onload="getTemp()">
   <div style="width: 430px; height: 932px; position: relative; background: #FFF7DF">
@@ -43,7 +43,9 @@
       <img style="width: 50px; height: 50px; left: 89px; top: 863px; position: absolute" src="../Images/HelpdeskIcon.png" />
     </a>
   </div>
-  <script> document.getElementById('roomID').innerHTML = 'Sala ' + JSON.parse(localStorage.getItem('toReserve')); </script>
+  <script>
+    document.getElementById('roomID').innerHTML = 'Sala ' + JSON.parse(localStorage.getItem('toReserve'));
+  </script>
   <script src="../JS/access.js"></script>
 </body>
 </html>

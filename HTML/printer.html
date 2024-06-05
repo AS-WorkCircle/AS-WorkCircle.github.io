@@ -2,12 +2,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>WorkCircle</title>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel='stylesheet' type='text/css' media='screen' href='../Css/reserve.css'>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>WorkCircle</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../Css/reserve.css'>
 </head>
+
 <body style="background-color: black;">
   <div style="width: 430px; height: 932px; position: relative; background: #FFF7DF">
     <div style="width: 430px; height: 89px; left: 0px; top: 843px; position: absolute; background: #EFE3C2"></div>
@@ -19,9 +20,11 @@
     <div style="width: 150px; height: 0px; left: 141px; top: 168px; position: absolute; border: 1px black solid"></div>
     <div style="width: 343px; height: 500px; left: 43px; top: 186px; position: absolute; background: #FFF7DF; border-radius: 34px"></div>
     <div style="left: 170px; top: 218px; position: absolute; color: black; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word">Ficheiros</div>
+
     <div id="endReservation" style="width: 343px; height: 40px; left: 43px; top: 720px; position: absolute; background: #FFF7DF; border-radius: 34px;padding-top: 20px; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word; text-align: center;">
       <a href="../HTML/payment.html" style="text-decoration: none; color: black;">Terminar Reserva</a>
     </div>
+
     <a href="menu.html">
       <img style="width: 50px; height: 50px; left: 290px; top: 863px; position: absolute" src="../Images/HomeIcon.png" />
     </a>
@@ -32,6 +35,7 @@
     <div style="width: 231px; height: 81px; left: 98px; top: 567px; position: absolute; background: #EFE3C2; border-radius: 34px"></div>
     <div style="left: 165px; top: 596px; position: absolute; color: black; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word">Submeter</div>
   </div>
-  <script>document.getElementById('printerID').innerHTML = "Impressora - " + JSON.parse(localStorage.getItem('toReserve'));</script>
+  <script>
+    document.getElementById('printerID').innerHTML = "Impressora - " + JSON.parse(localStorage.getItem('toReserve')); 
+  </script>
 </body>
-</html>
