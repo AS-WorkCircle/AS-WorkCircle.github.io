@@ -19,21 +19,36 @@ function makeReservation() {
     var email = document.getElementById('email');
     var resource = JSON.parse(localStorage.getItem('toReserve'));
 
-    if(email) {
-        var email = email.value;
-        if(validateEmail(email)) {
-            var loggedUser = localStorage.getItem('loggedUser');
-            var existingEntries = JSON.parse(localStorage.getItem(loggedUser));
+    // Check if email is valid
+    if (email) {
+        email = email.value;
+        if (validateEmail(email.value)) {
+            // Get user's resources and append new resource
+            var existingEntries = JSON.parse(localStorage.getItem(localStorage.getItem('loggedUser')));
+            console.log(existingEntries);
 
             if(existingEntries == null) existingEntries = [];
             existingEntries.push(resource);
             localStorage.setItem(loggedUser, JSON.stringify(existingEntries));
             localStorage.setItem(resource, JSON.stringify({'user': email, 'available': 0}));
 
-            if(resource > 100) window.location.href = '../HTML/temperature.html';
-            else window.location.href = '../HTML/printer.html';
-        } else alert('Email inválido!');
-    } else alert('Insira o email!');
+            // Save all resources back to local storage
+            existingEntries.push(entry);
+            localStorage.setItem(localStorage.getItem('loggedUser'), JSON.stringify(existingEntries));
+
+            // add user to the resource
+            window.localStorage.setItem(resource, JSON.stringify({'user' : email, 'available' : 0}));
+            
+            if(resource > 100)
+                window.location.href = '../HTML/temperature.html';
+            else
+                window.location.href = '../HTML/printer.html';
+        }
+        else 
+            alert('Email inválido!');
+    }
+    else 
+        alert('Insira o email!');
 }
 
 // Get resource name
