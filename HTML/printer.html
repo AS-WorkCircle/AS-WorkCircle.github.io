@@ -7,6 +7,7 @@
     <title>WorkCircle</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../Css/reserve.css'>
+    <script src="../JS/printer.js"></script>
 </head>
 
 <body style="background-color: black;">
@@ -32,9 +33,11 @@
       <img style="width: 50px; height: 50px; left: 89px; top: 863px; position: absolute" src="../Images/HelpdeskIcon.png" />
     </a>
     <img style="width: 128px; height: 128px; left: 150px; top: 401px; position: absolute" src="../Images/cloud.png" />
-    <div style="width: 231px; height: 81px; left: 98px; top: 567px; position: absolute; background: #EFE3C2; border-radius: 34px"></div>
-    <div style="left: 165px; top: 596px; position: absolute; color: black; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word">Submeter</div>
-  </div>
+    
+    <div style="width: 231px; height: 81px; left: 98px; top: 567px; position: absolute; background: #EFE3C2; border-radius: 34px; display: flex; justify-content: center; align-items: center;" onclick="submitFile()">
+      <span id='submit' style="position: absolute; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word">Submeter</span>
+    </div>
+
   <script>
     document.getElementById('printerID').innerHTML = "Impressora - " + JSON.parse(localStorage.getItem('toReserve')); 
   </script>
