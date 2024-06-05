@@ -21,25 +21,34 @@ function submitFile() {
     input.click();
 }
 
+// Update Page
 function updatePage() {
+    var header = document.getElementById('header');
     var cloud = document.getElementById('cloud');
     var submit = document.getElementById('submit');
     var deleteBtn = document.getElementById('delete');
+    var copiesDiv = document.getElementById('copies-div');
+    var copies = document.getElementById('copies');
 
     if (!localStorage.getItem(localStorage.getItem('loggedUser') + '_fileUploaded')){
+        header.textContent = 'Ficheiros';
         cloud.style.display = 'block';
         submit.textContent = 'Submeter Ficheiro';
         deleteBtn.style.display = 'none';
+        copiesDiv.style.display = 'none';
     } else {
+        header.textContent = localStorage.getItem(localStorage.getItem('loggedUser') + '_fileUploaded');
         cloud.style.display = 'none';
         submit.textContent = 'Enviar para a impressora';
         deleteBtn.style.display = 'flex';
+        copiesDiv.style.display = 'block';
+        copies.value = 1;
     }
 };
 
 // Send file to printer
 function printFile() {
-    alert("A imprimir " + localStorage.getItem(localStorage.getItem('loggedUser') + '_fileUploaded'));
+    alert("A imprimir " + document.getElementById('copies').value + " cópia(s) de " + localStorage.getItem(localStorage.getItem('loggedUser') + '_fileUploaded'));
     localStorage.removeItem(localStorage.getItem('loggedUser') + '_fileUploaded');
     updatePage();
 }

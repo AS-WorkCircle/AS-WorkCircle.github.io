@@ -20,10 +20,20 @@
     <div id="printerID" style="left: 149px; top: 131px; position: absolute; color: black; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word">Impressora #2</div>
     <div style="width: 150px; height: 0px; left: 141px; top: 168px; position: absolute; border: 1px black solid"></div>
     <div style="width: 343px; height: 500px; left: 43px; top: 186px; position: absolute; background: #FFF7DF; border-radius: 34px"></div>
-    <div style="left: 170px; top: 218px; position: absolute; color: black; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word">Ficheiros</div>
+    <div style="width: calc(100% - 70px); margin: 35px; top: 200px; position: absolute; color: black; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; text-align: center;">
+      <div id='header' style="word-wrap: break-word;">Ficheiros</div>
+    </div>
 
     <div id="endReservation" style="width: 343px; height: 40px; left: 43px; top: 720px; position: absolute; background: #FFF7DF; border-radius: 34px;padding-top: 20px; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word; text-align: center;">
       <a href="../HTML/payment.html" style="text-decoration: none; color: black;" onclick="removeFile()">Terminar Reserva</a>
+    </div>
+
+    <div style="display: flex; position: absolute; left: 47px; top: 300px;">
+      <div style="width: 338px; height: 96px; background: #FFF7DF; border-radius: 34px"></div>
+      <div id="copies-div">
+        <div style="left: 37px; top: 52px; position: absolute; color: black; font-size: 17px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word">Cópias</div>
+        <input id='copies' type="number" value="1" min="1" style="position: absolute; top: 48px; right: 30px; width: 50px; height: 25px; color: black; font-size: 17px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; text-align: center;"/>
+      </div>
     </div>
 
     <a href="menu.html">
