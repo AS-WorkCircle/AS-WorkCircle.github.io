@@ -32,16 +32,8 @@ function register() {
           localStorage.setItem(email, password.value);
           localStorage.setItem('loggedUser', JSON.stringify(email));
           window.location.href = "menu.html";
-<<<<<<< HEAD
-        } else { alert('Password inválida!'); }
-      } else { alert('Usuário já existe!'); }
-    } else { alert('E-mail inválido!'); }
-  } else { alert('Insira o e-mail!'); }
-}
-=======
         } else alert('Password inválida!');
       } else alert('Usuário já existe!');
     } else alert('E-mail inválido!');
   } else alert('Insira o e-mail!');
 }
->>>>>>> cc60e68 (Bug Correction & Project Cleanup)
