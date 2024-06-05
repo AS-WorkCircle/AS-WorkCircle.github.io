@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>WorkCircle</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../Css/access.css'>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>WorkCircle</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../Css/access.css'>
 </head>
 <body style="background-color: black;">
-
-<div style="width: 430px; height: 932px; position: relative; background: #FFF7DF">
+  <div style="width: 430px; height: 932px; position: relative; background: #FFF7DF">
     <div style="width: 430px; height: 89px; left: 0px; top: 843px; position: absolute; background: #EFE3C2"></div>
     <div style="width: 430px; height: 93px; left: 0px; top: 0px; position: absolute; background: #EFE3C2"></div>
     <img style="width: 59px; height: 63px; left: 16px; top: 14px; position: absolute" src="../Images/LogoBlack.png" />
@@ -26,10 +25,7 @@
     <div id='roomID' style="left: 173px; top: 204px; position: absolute; color: black; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word">Sala 120</div>
     <img style="width: 250px; height: 255.56px; left: 89px; top: 338px; position: absolute" src="../Images/QRCode.png" />
   </div>
-
-  <script>
-    document.getElementById('roomID').innerHTML = 'Sala ' + JSON.parse(localStorage.getItem('toReserve'));
-  </script>
+  <script> document.getElementById('roomID').innerHTML = 'Sala ' + JSON.parse(localStorage.getItem('toReserve'));</script>
   <script src="../JS/access.js"></script>
 </body>
 </html>
