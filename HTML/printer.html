@@ -10,7 +10,7 @@
     <script src="../JS/printer.js"></script>
 </head>
 
-<body style="background-color: black;">
+<body style="background-color: black;" onload="updatePage()">
   <div style="width: 430px; height: 932px; position: relative; background: #FFF7DF">
     <div style="width: 430px; height: 89px; left: 0px; top: 843px; position: absolute; background: #EFE3C2"></div>
     <div style="width: 430px; height: 93px; left: 0px; top: 0px; position: absolute; background: #EFE3C2"></div>
@@ -23,7 +23,7 @@
     <div style="left: 170px; top: 218px; position: absolute; color: black; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word">Ficheiros</div>
 
     <div id="endReservation" style="width: 343px; height: 40px; left: 43px; top: 720px; position: absolute; background: #FFF7DF; border-radius: 34px;padding-top: 20px; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word; text-align: center;">
-      <a href="../HTML/payment.html" style="text-decoration: none; color: black;">Terminar Reserva</a>
+      <a href="../HTML/payment.html" style="text-decoration: none; color: black;" onclick="removeFile()">Terminar Reserva</a>
     </div>
 
     <a href="menu.html">
@@ -32,10 +32,13 @@
     <a href="helpdesk.html">
       <img style="width: 50px; height: 50px; left: 89px; top: 863px; position: absolute" src="../Images/HelpdeskIcon.png" />
     </a>
-    <img style="width: 128px; height: 128px; left: 150px; top: 401px; position: absolute" src="../Images/cloud.png" />
-    
+    <img id='cloud' style="width: 128px; height: 128px; left: 150px; top: 351px; position: absolute" src="../Images/cloud.png" />
+
+    <div id='delete' style="width: 231px; height: 81px; left: 98px; top: 467px; position: absolute; background: #EFE3C2; border-radius: 34px; display: none; justify-content: center; align-items: center;" onclick="removeFile()">
+      <span style="position: absolute; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word">Apagar Ficheiro</span>
+    </div>
     <div style="width: 231px; height: 81px; left: 98px; top: 567px; position: absolute; background: #EFE3C2; border-radius: 34px; display: flex; justify-content: center; align-items: center;" onclick="submitFile()">
-      <span id='submit' style="position: absolute; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word">Submeter</span>
+      <span id='submit' style="position: absolute; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word">Submeter Ficheiro</span>
     </div>
 
   <script>
